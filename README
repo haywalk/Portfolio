@@ -1,0 +1,110 @@
+Hayden Walker 2019
+
+This is a portfolio of some of my favourite programs that I wrote during the summer of 2019.
+    *The programs are arranged alphabetically
+
+NOTE: The following dependencies are required in order to successfully run some of these programs. These dependencies are *not* included in the Python Standard Library.
+    *Matplotlib plotting library (for the Collatz Conjecture program)
+    *Pygame (for the aquarium program)
+
+------------------------------------------------------------------------------------------------------------
+Title (Date)
+    *Skills
+
+    Desc.
+------------------------------------------------------------------------------------------------------------
+Aquarium (19 August) [Requires Pygame]
+    *Pygame
+        *Importing sprites
+    *Random library
+    *Object-oriented programming
+        *Multiple instances of a class
+        *Each instance is unique and randomized
+    *Game loop
+    *Math operators
+        *Multiplication
+    *Conditionals
+    *Functions
+    *Methods
+
+    A simple aquarium. A random number of fish are spawned, each being an instance of the Fish class. Each is randomly assigned one of four breeds, and each has a randomly assigned speed. The fish will change directions when they come in contact with the screen's edge. Furthermore, each 50 millisecond cycle, each fish has a 1% chance (for each axis) of changing direction on its own, regardless of its position.
+------------------------------------------------------------------------------------------------------------
+Caesar Cypher (25 July)
+    *Iterables
+    *Conditionals
+    *For Loops    
+    *List wrapping
+    *Functions
+    
+    Takes an encryption key (n) from 0-25 and moves each character ahead n spaces in the alphabet. If the letter reaches z, it wraps back to a.
+------------------------------------------------------------------------------------------------------------
+Cash register (3 August)
+    *Rounding
+    *While Loops
+    *Conditionals
+    *Functions
+    
+    Takes a sales total and amount tendered, then calculates change and lists the amount of each denomination of change to return.
+------------------------------------------------------------------------------------------------------------
+Collatz Conjecture (7 August) [Requires Matplotlib]
+    *A Classic Algorithm
+    *While Loops
+    *Conditionals
+    *Math operators
+        *Modulus
+        *Floor division
+        *Addition
+    *Matplotlib Graphing Library
+    
+    Takes a positive integer (n), and depending on its parity, will either divide it by 2 or multiply it by 3 then add 1, and repeat the whole process until the integer is equal to 1. It will then display a graph where x is the number of steps and y is the value of n.
+------------------------------------------------------------------------------------------------------------
+Line/square drawing (27 July)
+    *Tkinter GUI Library
+        *Canvas
+        *Buttons
+        *Inputs
+    *Random library
+    *Object-Oriented Programming
+    *For Loops
+    *Functions
+    *Methods
+    
+    A GUI application that takes a number (n) and, depending on which button is pressed, will generate either n lines or n rectangles, all of random size, position, and colour. It will display the last action completed in a status bar at the bottom.
+------------------------------------------------------------------------------------------------------------
+Hangman (5 August)
+    *Random Library
+    *Reading from a text file
+    *For Loops
+    *Game Loop
+    *Conditionals
+    *Iterables
+    *Functions
+    
+    A game of hangman that pulls words from a 100-word text file.
+------------------------------------------------------------------------------------------------------------
+Minefield/Minesweeper (20 July)
+    *System commands
+    *Random Library
+    *Wrapping
+    *Iterables
+    *Conditionals
+    *Functions
+    *Game loop
+    
+    A game that draws a 5x5 grid, in which a random number of randomly placed mines are hidden. Goal: Clear the board without hitting a mine.
+------------------------------------------------------------------------------------------------------------
+Pig Latin (19 July)
+    *String slicing
+    *String concatenation
+    *Conditionals
+
+    Converts a word into "Pig Latin;" i.e. if the word begins with a vowel, it will add "ay" to the end, and if it begins with a consonant, it will move the first letter to the end of the word and then add "ay."
+------------------------------------------------------------------------------------------------------------
+Monty Python's Python Soundboard (31 July)
+    *Tkinter GUI Library
+        *Buttons
+    *Lambda Expressions
+    *Object-Oriented Programming
+    *Playing audio files
+    
+    A just-for-fun soundboard of clips from Monty Python's Life of Brian. Fun Fact: The Python Programming Language is named after Monty Python!
