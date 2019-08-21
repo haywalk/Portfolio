@@ -4,6 +4,7 @@ Will generate a random number of fish, of varying breeds.
 '''
 import pygame
 import random
+from os import system, name
 
 # Initiate PyGame and setup the window
 pygame.init()
@@ -26,6 +27,8 @@ class Fish:
 		# Velocities
 		self.vx = vx
 		self.vy = vy
+		# Kind of fish
+		self.type = ["goldfish", "betta", "angelfish", "clownfish"][kind]
 
 		# Load sprites depending on type of fish
 		left = ["fish1-l.png", "betta-l.png", "angel-l.png", "clown-l.png"]
@@ -37,6 +40,9 @@ class Fish:
 		self.right = pygame.image.load(right[kind])
 		self.w = width[kind]
 		self.h = height[kind]
+
+	def __str__(self):
+		return self.type
 
 	def draw(self):
 		'''
@@ -68,6 +74,25 @@ def genfish(num):
 		# Add randomized fish
 		chars.append(Fish(x = random.randint(0, 440), y = random.randint(0, 450),\
 		vx = random.randint(1, 7), vy = random.randint(1, 7), kind = random.randint(0, 3)))
+
+def printfish():
+	'''
+	Print out the coordinates of each fish
+	'''
+	global chars
+	
+	# Clear the screen
+	if name == "nt": # If on windows, command CLS
+		_ = system("cls")
+	else: # If on *nix, command clear
+		_ = system("clear")
+
+	# Print each fish
+	for i in chars:
+		print(f"{i.type} at ({i.x}, {i.y})")
+
+	# Print total fish
+	print(f"\n{len(chars)} fish on-screen")
 
 genfish(random.randint(2, 15)) # Generate a random number of fish
 
@@ -102,4 +127,5 @@ while True:
 		i.x += i.vx
 		i.y += i.vy
 
-	drawsc()
+	drawsc() # Update the screen and sprites
+	printfish() # Print the coordinates of each fish to the console
