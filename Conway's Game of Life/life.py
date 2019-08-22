@@ -60,13 +60,29 @@ def checkneighbours():
 	for i in chars:
 		neighbours = 0
 		spot = chars.index(i)
+		# To the left
 		if (not (spot % 10 == 0)) and (chars[spot - 1].living == True):
 			neighbours += 1
+		# To the right
 		if (not (spot in (9, 19, 29, 39, 49, 59, 69, 79, 89, 99))) and (chars[spot + 1].living == True):
 			neighbours += 1
+		# Below
 		if (not (90 <= spot <= 99)) and (chars[spot + 10].living == True):
 			neighbours += 1
+		# Above
 		if (not(0 <= spot <= 9)) and (chars[spot - 10].living == True):
+			neighbours += 1
+		# Diag. upper left
+		if (not (spot in range(0, 9))) and (not (spot % 10 == 0)) and (chars[spot - 11].living == True):
+			neighbours += 1
+		# Diag. bottom right
+		if (not (spot in (9, 19, 39, 49, 59, 69, 79, 89, 99))) and (not (spot in range(90, 99))) and (chars[spot + 11].living == True):
+			neighbours += 1
+		# Diag. upper right
+		if (not (spot in range(0, 9))) and (not (spot in (9, 19, 29, 39, 49, 59, 69, 79, 89, 99))) and (chars[spot - 9].living == True):
+			neighbours += 1
+		# Diag. bottom left
+		if (spot % 10 != 0) and (spot < 90) and (chars[spot + 9].living == True):
 			neighbours += 1
 		i.neighbours = neighbours
 
