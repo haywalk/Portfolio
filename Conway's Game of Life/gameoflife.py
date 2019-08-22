@@ -30,7 +30,7 @@ class Space:
 
 def startwin():
 	'''
-	Create the window based on specified size
+	Create the window based on specified size, and define the edges
 	'''
 	global redge
 	global tedge
@@ -58,14 +58,8 @@ def genchars():
 	'''
 	Randomly generate living/dead squares
 	'''
-	global redge
-	global tedge
-	global bedge
-	global ledge
-	global win
 	global chars
-	global wh
-
+	
 	chars = list()
 
 	for y in range(0, wh, 10):
@@ -85,37 +79,33 @@ def checkneighbours():
 	'''
 	Check how many living neighbours a square has
 	'''
-	global redge
-	global tedge
-	global bedge
-	global ledge
 
 	for i in chars:
 		neighbours = 0
 		spot = chars.index(i)
 		# To the left
-		if (not (spot in ledge)) and (chars[spot - 1].living == True):
+		if (not (spot in ledge)) and (chars[spot - 1].living):
 			neighbours += 1
 		# To the right
-		if (not (spot in redge)) and (chars[spot + 1].living == True):
+		if (not (spot in redge)) and (chars[spot + 1].living):
 			neighbours += 1
 		# Below
-		if (not (spot in bedge)) and (chars[spot + (wh // 10)].living == True):
+		if (not (spot in bedge)) and (chars[spot + (wh // 10)].living):
 			neighbours += 1
 		# Above
-		if (not(spot in tedge)) and (chars[spot - (wh // 10)].living == True):
+		if (not(spot in tedge)) and (chars[spot - (wh // 10)].living):
 			neighbours += 1
 		# Diag. upper left
-		if (not (spot in tedge)) and (not (spot in ledge)) and (chars[spot - ((wh // 10) + 1)].living == True):
+		if (not (spot in tedge)) and (not (spot in ledge)) and (chars[spot - ((wh // 10) + 1)].living):
 			neighbours += 1
 		# Diag. bottom right
-		if (not (spot in bedge)) and (not (spot in redge)) and (chars[spot + ((wh // 10) + 1)].living == True):
+		if (not (spot in bedge)) and (not (spot in redge)) and (chars[spot + ((wh // 10) + 1)].living):
 			neighbours += 1
 		# Diag. upper right
-		if (not (spot in tedge)) and (not (spot in redge)) and (chars[spot - ((wh // 10) - 1)].living == True):
+		if (not (spot in tedge)) and (not (spot in redge)) and (chars[spot - ((wh // 10) - 1)].living):
 			neighbours += 1
 		# Diag. bottom left
-		if (not (spot in bedge)) and (not (spot in ledge)) and (chars[spot + ((wh // 10) - 1)].living == True):
+		if (not (spot in bedge)) and (not (spot in ledge)) and (chars[spot + ((wh // 10) - 1)].living):
 			neighbours += 1
 		i.neighbours = neighbours
 
@@ -132,8 +122,6 @@ def evolve():
 				i.living = True
 
 def mainloop():
-	gens = 0
-
 	while True:
 		'''
 		The main loop
@@ -146,11 +134,9 @@ def mainloop():
 		checkneighbours()
 		evolve()
 
-		pygame.time.delay(500) # Time between generations
-		gens += 1
-		print(gens)
+		pygame.time.delay(100) # Time between generations
 
-wh = 600 # Window width and height
+wh = 500 # Window width and height
 startwin() # Initiate the window
 genchars() # Generate the initial characters
 mainloop() # Start the game loop
