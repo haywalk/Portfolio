@@ -58,6 +58,16 @@ Collatz Conjecture (7 August) [Requires Matplotlib]
     
     Takes a positive integer (n), and depending on its parity, will either divide it by 2 or multiply it by 3 then add 1, and repeat the whole process until the integer is equal to 1. It will then display a graph where x is the number of steps and y is the value of n.
 ------------------------------------------------------------------------------------------------------------
+Conway's Game of Life (22 August) [Requires Pygame]
+    *A Cellular Automaton
+    *Random Library
+    *PyGame
+        *Rectangles
+    *Conditionals
+    *Game Loop
+
+    Generates 100 squares that can each be either living or dead; each 1-second "generation," if a living square has less than two or more than three living neighbours, it will die from either underpopulation or crowding. If a dead square has exactly three living neighbours, it will become living, via reproduction.
+------------------------------------------------------------------------------------------------------------
 Line/square drawing (27 July)
     *Tkinter GUI Library
         *Canvas
