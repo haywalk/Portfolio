@@ -132,6 +132,8 @@ def evolve():
 				i.living = True
 
 def mainloop():
+	gens = 0
+
 	while True:
 		'''
 		The main loop
@@ -144,7 +146,9 @@ def mainloop():
 		checkneighbours()
 		evolve()
 
-		pygame.time.delay(100) # One second per generation
+		pygame.time.delay(500) # Time between generations
+		gens += 1
+		print(gens)
 
 wh = 600 # Window width and height
 startwin() # Initiate the window
