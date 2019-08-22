@@ -122,10 +122,10 @@ def evolve():
 				i.living = True
 
 def mainloop():
+	'''
+	The main loop
+	'''
 	while True:
-		'''
-		The main loop
-		'''
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				quit()
