@@ -79,7 +79,6 @@ def checkneighbours():
 	'''
 	Check how many living neighbours a square has
 	'''
-
 	for i in chars:
 		neighbours = 0
 		spot = chars.index(i)
@@ -107,6 +106,7 @@ def checkneighbours():
 		# Diag. bottom left
 		if (not (spot in bedge)) and (not (spot in ledge)) and (chars[spot + ((wh // 10) - 1)].living):
 			neighbours += 1
+
 		i.neighbours = neighbours
 
 def evolve():
