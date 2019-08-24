@@ -1,7 +1,7 @@
 Hayden Walker 2019
 
 This is a portfolio of some of my favourite programs that I wrote during the summer of 2019.
-    *The programs are arranged alphabetically
+    *The programs are arranged alphabetically (By folder name, not by title)
 
 NOTE: The following dependencies are required in order to successfully run some of these programs. These dependencies are *not* included in the Python Standard Library.
     *Matplotlib plotting library (for the Collatz Conjecture program)
@@ -64,6 +64,10 @@ Conway's Game of Life (22 August) [Requires Pygame]
     *PyGame
         *Rectangles
     *Conditionals
+    *Iteration
+    *Object-Oriented Programming
+    *Functions
+    *Methods
     *Game Loop
 
     Generates 100 squares that can each be either living or dead; each 1-second "generation," if a living square has less than two or more than three living neighbours, it will die from either underpopulation or crowding. If a dead square has exactly three living neighbours, it will become living, via reproduction.
@@ -109,6 +113,15 @@ Pig Latin (19 July)
     *Conditionals
 
     Converts a word into "Pig Latin;" i.e. if the word begins with a vowel, it will add "ay" to the end, and if it begins with a consonant, it will move the first letter to the end of the word and then add "ay."
+------------------------------------------------------------------------------------------------------------
+Recursive Guessing Game (24 August)
+    *Recursion
+    *Conditionals
+    *Math operators
+        *Floor division
+        *Addition
+
+    The user chooses a number between 0 and 100 (unknown to the computer), and the computer will guess it. A light project that I included because of recursion. 
 ------------------------------------------------------------------------------------------------------------
 Monty Python's Python Soundboard (31 July)
     *Tkinter GUI Library
