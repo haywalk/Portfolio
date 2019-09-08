@@ -5,7 +5,7 @@ This is a portfolio of some of my favourite programs that I wrote during the sum
 
 NOTE: The following dependencies are required in order to successfully run some of these programs. These dependencies are *not* included in the Python Standard Library.
     *Matplotlib plotting library (for the Collatz Conjecture program)
-    *Pygame (for the aquarium program)
+    *Pygame (for the aquarium program as well as Conway's Game of Life)
 
 ------------------------------------------------------------------------------------------------------------
 Title (Date)
