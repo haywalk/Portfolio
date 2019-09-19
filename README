@@ -29,6 +29,17 @@ Aquarium (19 August) [Requires Pygame]
 
     A simple aquarium. A random number of fish are spawned, each being an instance of the Fish class. Each is randomly assigned one of four breeds, and each has a randomly assigned speed. The fish will change directions when they come in contact with the screen's edge. Furthermore, each 50 millisecond cycle, each fish has a 1% chance (for each axis) of changing direction on its own, regardless of its position.
 ------------------------------------------------------------------------------------------------------------
+Binary to Decimal Converter (18 August)
+    *String slicing
+        *Reversing
+        *Concatenation
+    *Iterables
+    *Conditionals
+    *Math operators
+        *Powers
+    
+    A simple binary to decimal converter; will accept an arbitrtary amount of bytes of arbitrary lengths.
+------------------------------------------------------------------------------------------------------------
 Caesar Cypher (25 July)
     *Iterables
     *Conditionals
