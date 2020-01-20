@@ -134,6 +134,16 @@ Recursive Guessing Game (24 August)
 
     The user chooses a number between 0 and 100 (unknown to the computer), and the computer will guess it. A light project that I included because of recursion. 
 ------------------------------------------------------------------------------------------------------------
+Roman Numerals to Integer (19 January 2020)
+    *Dictionary data type
+    *Conditional
+    *For loop
+        *Continue
+    *Lists/using indexed
+    *Iteration
+
+    The user inputs a number in Roman numerals and it is returned as an integer.
+------------------------------------------------------------------------------------------------------------
 Monty Python's Python Soundboard (31 July)
     *Tkinter GUI Library
         *Buttons
