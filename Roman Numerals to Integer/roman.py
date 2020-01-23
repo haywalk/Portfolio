@@ -17,11 +17,10 @@ for let in romanNum:
 for part in parts:
 	ind = parts.index(part)
 	
-	# If not at the end & number is greater than next index, subtract it
-	if ind != len(parts) - 1:
-		if part < parts[ind + 1]:
-			num -= part
-			continue
+	# If not at the end && number is less than next index: subtract it
+	if (ind != len(parts) - 1) and (part < parts[ind + 1]):
+		num -= part
+		continue
 
 	# Otherwise add the number
 	num += part
