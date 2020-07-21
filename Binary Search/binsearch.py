@@ -4,10 +4,6 @@ Hayden Walker
 21 July 2020
 '''
 
-# The array and the target
-myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-target = 11
-
 def binarySearch(top, bottom, target):
 	# Try and look for the target
 	try:
@@ -22,6 +18,10 @@ def binarySearch(top, bottom, target):
 
 	# If the program reaches max recursion depth, the target isn't there
 	except:
-		return "null"
+		return None
+
+# The array and the target
+myArray = [1, 8, 9, 12, 16, 82, 92, 120]
+target = 0
 
 print(binarySearch(len(myArray), 0, target))

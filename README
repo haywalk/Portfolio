@@ -35,7 +35,7 @@ Binary Search Algorithm (21 July 2020)
     *Exception handling
 
     A binary search algorithm. A sorted array of numbers is given along with a number to search for. The function
-will return the position of the target number in the array, or 'null' if it isn't there. Uses recursion.
+will return the position of the target number in the array, or None if it isn't there. Uses recursion.
 ------------------------------------------------------------------------------------------------------------
 Binary to Decimal Converter (18 August 2019)
     *String slicing
