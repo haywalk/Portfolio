@@ -1,6 +1,6 @@
 # Hayden's Python Portfolio
 
-This is a portfolio of some of my favourite programs I've written in Python since the summer of 2019.
+This is a portfolio of some of my favourite programs I wrote in Python during the summer of 2019, the summer I learned to program.
 
 **Note: Collatz Conjecture requires the MatPlotLib library, and Conway's Game of Life and the aquarium require PyGame.**
 
@@ -18,14 +18,6 @@ A simple aquarium. A random number of fish are spawned, each being an instance o
 - Object-oriented programming
   - Multiple instances of a class
   - Each instance is unique and randomized
-
-## Binary Search Algorithm (21 July 2020)
-
-A binary search algorithm. A sorted array of numbers is given along with a number to search for. The function will return the position of the target number in the array, or None if it isn't there. Uses recursion.
-
-- Recursion
-- Conditionals
-- Exception handling
 
 ## Binary to Decimal Converter (18 August 2019)
 
@@ -112,15 +104,6 @@ A game of hangman that pulls words from a 100-word text file.
 - Iterables
 - Functions
 
-## Insertion Sort (1 August 2020)
-
-Basic insertion sort algorithm
-
-- Iteration
-- Lists
-- For loops
-- Algorithms
-
 ## Minefield/Minesweeper (20 July 2019)
 
 A game that draws a 5x5 grid, in which a random number of randomly placed mines are hidden. The goal is to clear the board without hitting a mine.
@@ -150,17 +133,6 @@ The user chooses a number between 0 and 100 (unknown to the computer), and the c
 - Math operators
   - Floor division
   - Addition
-
-## Roman Numerals to Integer (19 January 2020)
-
-The user inputs a number in Roman numerals and it is returned as an integer.
-
-- Dictionary data type
-- Conditional
-- For loop
-  - Continue
-- Lists/using indexes
-- Iteration
 
 ## Monty Python's Python Soundboard (31 July 2019)
 
